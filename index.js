@@ -28,6 +28,15 @@ $(document).keypress(function () {
     }, 500);
 });
 
+$("h1").click(function () {
+    if(playing==0){
+    playing = 1;
+    index = 0;
+    setTimeout(function () {
+        generate(index);
+    }, 500);}
+});
+
 
 
 function generate(i) {
